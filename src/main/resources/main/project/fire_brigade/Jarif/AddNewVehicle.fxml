@@ -10,8 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Jarif.AddNewVehicleController">
    <children>
       <VBox prefHeight="600.0" prefWidth="800.0" spacing="13.0">
          <padding>
@@ -89,13 +88,13 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="90.0" prefWidth="760.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Add Vehicle">
+                  <Button mnemonicParsing="false" onAction="#handleAddVehicle" prefHeight="51.0" prefWidth="162.0" text="Add Vehicle">
                      <font>
                         <Font size="24.0" />
                      </font>
                   </Button>
                   <HBox prefHeight="51.0" prefWidth="37.0" />
-                  <Button mnemonicParsing="false" prefHeight="51.0" prefWidth="162.0" text="Clear">
+                  <Button mnemonicParsing="false" onAction="#handleClear" prefHeight="51.0" prefWidth="162.0" text="Clear">
                      <font>
                         <Font size="24.0" />
                      </font>
