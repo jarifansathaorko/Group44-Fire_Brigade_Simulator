@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="610.0" prefWidth="894.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Niha.ControlRoomOperatorviewcontroller">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="900.0">
+         <children>
+            <Text layoutX="252.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controll Room Operator DashBoard" wrappingWidth="327.2000793457032">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="342.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" User Id" wrappingWidth="66.93670654296875">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Text>
+            <Button layoutX="150.0" layoutY="134.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" text="Dispatch Emergency">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="152.0" layoutY="193.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" text="Set Incident Priority">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="150.0" layoutY="259.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" text="Assign Response Team">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="150.0" layoutY="317.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="206.0" text="Manage Response Resources">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="391.0" layoutY="130.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="246.0" text="Monitor Live Incidents">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="389.0" layoutY="194.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="Review Backup Requests">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="389.0" layoutY="259.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="Verify &amp; Close Emergency">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="389.0" layoutY="317.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="254.0" text="Generate Emergency Report">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="334.0" layoutY="385.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="82.0" text="Log Out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="399.0" layoutY="75.0" prefHeight="18.0" prefWidth="53.0" />
+         </children>
+      </AnchorPane>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   </children>
+</AnchorPane>

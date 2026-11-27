@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Niha.AcceptIncidentViewController">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="900.0" />
+      <AnchorPane layoutX="13.0" layoutY="10.0" prefHeight="620.0" prefWidth="900.0">
+         <children>
+            <Label layoutX="44.0" layoutY="47.0" prefHeight="28.0" prefWidth="110.0" text="Accept Incident">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="806.0" layoutY="36.0" text="back" />
+            <TableView layoutY="96.0" prefHeight="200.0" prefWidth="517.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Incident ID" />
+                  <TableColumn prefWidth="75.0" text="Type" />
+                  <TableColumn prefWidth="95.20001220703125" text="Location" />
+                  <TableColumn prefWidth="105.5999755859375" text="Current Priority" />
+               </columns>
+            </TableView>
+            <TextField layoutX="558.0" layoutY="92.0" prefHeight="262.0" prefWidth="224.0" text="           Accept selected Incident ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Niha.GenerateEmergencyReportViewController">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="900.0">
+         <children>
+            <AnchorPane layoutX="33.0" layoutY="70.0" prefHeight="620.0" prefWidth="900.0">
+               <children>
+                  <Label layoutX="46.0" layoutY="33.0" prefHeight="28.0" prefWidth="186.0" text="Generate Emergency Report">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="70.0" prefHeight="18.0" prefWidth="200.0" text="Incident Records">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="806.0" layoutY="36.0" text="back" />
+                  <TableView layoutY="96.0" prefHeight="200.0" prefWidth="517.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Incident ID" />
+                        <TableColumn prefWidth="75.0" text="Type" />
+                        <TableColumn prefWidth="95.20001220703125" text="Location" />
+                        <TableColumn prefWidth="105.5999755859375" text="date" />
+                        <TableColumn prefWidth="105.5999755859375" text="Status" />
+                     </columns>
+                  </TableView>
+                  <TextField layoutX="549.0" layoutY="90.0" text="Assinment Note">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="548.0" layoutY="136.0" prefHeight="119.0" prefWidth="174.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="576.0" layoutY="281.0" prefHeight="30.0" prefWidth="118.0" text="Generate Report">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="576.0" layoutY="41.0" prefHeight="20.0" prefWidth="138.0" text="Report Settings ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

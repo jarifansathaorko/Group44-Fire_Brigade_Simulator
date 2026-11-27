@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Niha.ManageResponseResourcesViewController">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="900.0">
+         <children>
+            <AnchorPane layoutX="17.0" layoutY="28.0" prefHeight="702.0" prefWidth="715.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="31.0" prefHeight="28.0" prefWidth="200.0" text="Manage Response Resources">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="70.0" prefHeight="20.0" prefWidth="136.0" text="Current Inventory">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="806.0" layoutY="36.0" text="back" />
+                  <TableView layoutY="96.0" prefHeight="200.0" prefWidth="517.0">
+                     <columns>
+                        <TableColumn prefWidth="75.0" text="Resource ID" />
+                        <TableColumn prefWidth="75.0" text="Type" />
+                        <TableColumn prefWidth="104.79998779296875" text="Location" />
+                        <TableColumn prefWidth="95.20001220703125" text="Status" />
+                        <TableColumn prefWidth="105.5999755859375" text="Quality" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="530.0" layoutY="268.0" prefHeight="18.0" prefWidth="38.0" text="VBox:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="518.0" layoutY="310.0" text="Update Resources Status">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="518.0" layoutY="353.0" text="Allocate to Incident">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="518.0" layoutY="402.0" text="Request New Stock">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="561.0" layoutY="65.0" prefHeight="18.0" prefWidth="104.0" text="Resource action">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="551.0" layoutY="100.0" prefHeight="46.0" prefWidth="136.0" text="Update Quality">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="656.0" layoutY="110.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Niha.ReviewBackUpRequestViewController">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="900.0">
+         <children>
+            <Label layoutX="46.0" layoutY="33.0" prefHeight="28.0" prefWidth="163.0" text="Review Backup Requests">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="70.0" prefHeight="18.0" prefWidth="200.0" text="Pending Backup Requests">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="806.0" layoutY="36.0" text="back" />
+            <TableView layoutY="96.0" prefHeight="200.0" prefWidth="517.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Request ID" />
+                <TableColumn prefWidth="75.0" text="Incident Id" />
+                  <TableColumn prefWidth="104.79998779296875" text="Requesting Unit" />
+                  <TableColumn prefWidth="95.20001220703125" text="Location" />
+                  <TableColumn prefWidth="105.5999755859375" text="Status" />
+              </columns>
+            </TableView>
+            <Label layoutX="530.0" layoutY="268.0" prefHeight="18.0" prefWidth="38.0" text="VBox:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField layoutX="518.0" layoutY="310.0" text="Approve Request">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="518.0" layoutY="353.0" text="Deny Request">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="518.0" layoutY="402.0" text="Escalate">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

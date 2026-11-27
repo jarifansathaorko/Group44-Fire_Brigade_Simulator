@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Niha&gt;MonitorLiveIncidents">
+   <children>
+      <AnchorPane prefHeight="620.0" prefWidth="900.0">
+         <children>
+            <Label layoutX="68.0" layoutY="39.0" prefHeight="39.0" prefWidth="190.0" text="Monitor Live Incidents">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="660.0" layoutY="50.0" text="Back" />
+            <TableView layoutX="14.0" layoutY="96.0" prefHeight="200.0" prefWidth="410.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="ID" />
+                <TableColumn prefWidth="67.99996185302734" text="Type" />
+                  <TableColumn prefWidth="67.99996185302734" text="Location" />
+                  <TableColumn prefWidth="67.99996185302734" text="Priority" />
+              </columns>
+            </TableView>
+            <TextField layoutX="453.0" layoutY="100.0" prefHeight="40.0" prefWidth="174.0" text="View Details">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="453.0" layoutY="150.0" prefHeight="40.0" prefWidth="174.0" text="Update Status">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField layoutX="447.0" layoutY="198.0" prefHeight="40.0" prefWidth="181.0" text="Acknowledge">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <Label layoutX="486.0" layoutY="253.0" prefHeight="18.0" prefWidth="103.0" text="Total Active 4">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
