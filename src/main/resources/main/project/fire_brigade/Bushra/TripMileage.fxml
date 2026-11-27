@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="342.0" prefWidth="421.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Bushra.TripMileage">
+   <children>
+      <Label layoutX="27.0" layoutY="25.0" text="Trip Mileage">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="77.0" text="Starting Odometer Reading (km):" />
+      <Label layoutX="28.0" layoutY="110.0" text="Ending Odometer Reading (km) :" />
+      <Label layoutX="30.0" layoutY="144.0" text="Trip Date :" />
+      <Label layoutX="28.0" layoutY="177.0" text="Calculated Trip Distance (km) :" />
+      <Button layoutX="50.0" layoutY="213.0" mnemonicParsing="false" onAction="#clearonaction" text="Clear" />
+      <Button layoutX="108.0" layoutY="213.0" mnemonicParsing="false" onAction="#calandsaveonaction" text="Calculate &amp; Save " />
+      <TextField fx:id="startingodometerreadingtextfeild" layoutX="210.0" layoutY="73.0" />
+      <TextField fx:id="endingodometertextfield" layoutX="210.0" layoutY="106.0" />
+      <TextField fx:id="calculatetripdistancetextfield" layoutX="200.0" layoutY="173.0" />
+      <DatePicker fx:id="tripdatedatepicker" layoutX="87.0" layoutY="140.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="366.0" prefWidth="728.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Bushra.EmergencyCallerviewcontroller">
+   <left>
+      <VBox prefHeight="679.0" prefWidth="252.0" spacing="22.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#reportfireincidentonaction" prefHeight="16.0" prefWidth="252.0" text="Report Fire Incident" />
+            <Button mnemonicParsing="false" onAction="#incidentlocationonaction" prefHeight="25.0" prefWidth="326.0" text="Incident Location" />
+            <Button mnemonicParsing="false" onAction="#firedetailsonaction" prefHeight="25.0" prefWidth="327.0" text="Fire Details" />
+            <Button mnemonicParsing="false" onAction="#reportvictimsonaction" prefHeight="25.0" prefWidth="294.0" text="Report Victims" />
+            <Button mnemonicParsing="false" onAction="#contactinformationonaction" prefHeight="25.0" prefWidth="307.0" text="Contact Information" />
+            <Button mnemonicParsing="false" onAction="#dispatcherqueriesonaction" prefHeight="25.0" prefWidth="299.0" text="Dispatcher Queries" />
+            <Button mnemonicParsing="false" onAction="#logoutonaction" prefHeight="25.0" prefWidth="273.0" text="Log Out" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane fx:id="emergencycallerdashboard" prefHeight="612.0" prefWidth="467.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
