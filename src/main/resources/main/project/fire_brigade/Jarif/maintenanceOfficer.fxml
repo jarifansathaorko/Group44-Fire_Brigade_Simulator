@@ -32,15 +32,15 @@
       </MenuBar>
       <VBox layoutY="25.0" prefHeight="855.0" prefWidth="324.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="324.0" text="Add New Vehicle" />
-            <Button mnemonicParsing="false" prefHeight="88.0" prefWidth="324.0" text="View Fleet Inventory" />
-            <Button mnemonicParsing="false" prefHeight="102.0" prefWidth="324.0" text="Log Maintenance Work" />
-            <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="324.0" text="Update Vehicle Availability" />
-            <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="324.0" text="Workshop Diagnostic Result" />
-            <Button mnemonicParsing="false" prefHeight="97.0" prefWidth="324.0" text="Schedule Preventive Maintenance" />
-            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="324.0" text="Record Spare Part Usage" />
-            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="324.0" text="Generate Expense Summary" />
-            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="324.0" text="Logout" />
+            <Button mnemonicParsing="false" onAction="#addNewVehicleButtonOnAction" prefHeight="81.0" prefWidth="324.0" text="Add New Vehicle" />
+            <Button mnemonicParsing="false" onAction="#viewFleetInventoryButtonOnAction" prefHeight="88.0" prefWidth="324.0" text="View Fleet Inventory" />
+            <Button mnemonicParsing="false" onAction="#logMaintenanceWorkButtonOnAction" prefHeight="102.0" prefWidth="324.0" text="Log Maintenance Work" />
+            <Button mnemonicParsing="false" onAction="#updateVehicleAvailabilityButtonOnAction" prefHeight="85.0" prefWidth="324.0" text="Update Vehicle Availability" />
+            <Button mnemonicParsing="false" onAction="#workshopDiagnosticResultButtonOnAction" prefHeight="97.0" prefWidth="324.0" text="Workshop Diagnostic Result" />
+            <Button mnemonicParsing="false" onAction="#SchedulePreventiveMaintenanceButtonOnAction" prefHeight="97.0" prefWidth="324.0" text="Schedule Preventive Maintenance" />
+            <Button mnemonicParsing="false" onAction="#RecordSparePartUsageButtonOnAction" prefHeight="81.0" prefWidth="324.0" text="Record Spare Part Usage" />
+            <Button mnemonicParsing="false" onAction="#generateEspenseSummaryButtonOnAction" prefHeight="81.0" prefWidth="324.0" text="Generate Expense Summary" />
+            <Button mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="81.0" prefWidth="324.0" text="Logout" />
          </children>
       </VBox>
       <Label layoutX="646.0" layoutY="87.0" prefHeight="35.0" prefWidth="67.0" text="User ID:">
