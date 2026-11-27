@@ -3,7 +3,7 @@ package main.project.fire_brigade.Junayeed;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class test extends Application {
+public class AppendableObjectOutputStream extends Application {
 
     public static void main(String[] args) {
         launch(args);
