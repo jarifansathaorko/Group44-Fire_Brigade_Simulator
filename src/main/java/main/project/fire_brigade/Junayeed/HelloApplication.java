@@ -17,7 +17,7 @@ public class HelloApplication extends Application {
     }
 
     public static void showDashboard(String role) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("dashboardView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fireStationOfficerDashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         DashboardController controller = fxmlLoader.getController();
         controller.setRole(role);

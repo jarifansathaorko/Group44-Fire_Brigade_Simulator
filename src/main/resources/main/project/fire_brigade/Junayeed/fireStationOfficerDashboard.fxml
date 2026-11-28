@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Junayeed.DashboardController">
+    <children>
+        <Label layoutX="80.0" layoutY="35.0" prefHeight="35.0" prefWidth="680.0" text="FIRE BRIGADE MANAGEMENT SYSTEM" />
+        <Label fx:id="headingLabel" layoutX="80.0" layoutY="80.0" prefHeight="30.0" prefWidth="680.0" text="FIRE STATION OFFICER DASHBOARD" />
+        <Label fx:id="descriptionLabel" layoutX="80.0" layoutY="120.0" prefHeight="25.0" prefWidth="680.0" text="Select a goal:" />
+        <GridPane fx:id="goalsGrid" hgap="15.0" layoutX="80.0" layoutY="165.0" prefWidth="680.0" vgap="15.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="332.5" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="332.5" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button fx:id="goal1Button" mnemonicParsing="false" onAction="#goal1ButtonOnAction" prefWidth="320.0" text="View Available Fire Trucks" />
+                <Button fx:id="goal2Button" mnemonicParsing="false" onAction="#goal2ButtonOnAction" prefWidth="320.0" text="Assign a Fire Truck" GridPane.columnIndex="1" />
+                <Button fx:id="goal3Button" mnemonicParsing="false" onAction="#goal3ButtonOnAction" prefWidth="320.0" text="View Firefighter Availability" GridPane.rowIndex="1" />
+                <Button fx:id="goal4Button" mnemonicParsing="false" onAction="#goal4ButtonOnAction" prefWidth="320.0" text="Record Station Incident" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button fx:id="goal5Button" mnemonicParsing="false" onAction="#goal5ButtonOnAction" prefWidth="320.0" text="View Current Emergencies" GridPane.rowIndex="2" />
+                <Button fx:id="goal6Button" mnemonicParsing="false" onAction="#goal6ButtonOnAction" prefWidth="320.0" text="Mark Fire Truck as Unavailable" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="goal7Button" mnemonicParsing="false" onAction="#goal7ButtonOnAction" prefWidth="320.0" text="View Station Resources" GridPane.rowIndex="3" />
+                <Button fx:id="goal8Button" mnemonicParsing="false" onAction="#goal8ButtonOnAction" prefWidth="320.0" text="Update Station Information" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </children>
+        </GridPane>
+        <Button layoutX="80.0" layoutY="540.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefWidth="160.0" text="Switch Dashboard" />
+    </children>
+</AnchorPane>
