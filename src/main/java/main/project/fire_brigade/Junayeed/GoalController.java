@@ -1,17 +1,32 @@
 package main.project.fire_brigade.Junayeed;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 public class GoalController {
-    @javafx.fxml.FXML
-    private Label descriptionLabel;
-    @javafx.fxml.FXML
+    @FXML
     private Label headingLabel;
-    @javafx.fxml.FXML
-    private TextArea resultTA;
-    @javafx.fxml.FXML
+    @FXML
+    private Label descriptionLabel;
+    @FXML
+    private Label fieldOneLabel;
+    @FXML
+    private Label fieldTwoLabel;
+    @FXML
+    private Label fieldThreeLabel;
+    @FXML
+    private TextField fieldOneTF;
+    @FXML
+    private TextField fieldTwoTF;
+    @FXML
+    private TextField fieldThreeTF;
+    @FXML
+    private ComboBox<String> optionCB;
+    @FXML
     private Button actionButton;
+    @FXML
+    private TextArea resultTA;
 
     @javafx.fxml.FXML
     public void backButtonOnAction(ActionEvent actionEvent) {
@@ -20,7 +35,8 @@ public class GoalController {
     @javafx.fxml.FXML
     public void actionButtonOnAction(ActionEvent actionEvent) {
     }
-
+    private String role;
+    private int goalNumber;
     public void setGoal(String role, int goalNumber) {
     }
 }
