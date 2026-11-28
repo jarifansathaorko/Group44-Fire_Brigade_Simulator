@@ -1,29 +1,29 @@
 package main.project.fire_brigade.Jarif.controller_class.Maintenance_Officer;
 
-import org.w3c.dom.Text;
-
-import javax.swing.table.TableColumn;
-import javax.swing.text.TableView;
-import java.awt.event.ActionEvent;
+import main.project.fire_brigade.Jarif.model_class.maintenance_officer.Vehicle;
+import javafx.event.ActionEvent;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.text.Text;
 
 public class viewFleetInventoryViewController
 {
     @javafx.fxml.FXML
-    private TableColumn vehicleModelColumnView;
+    private TableColumn<Vehicle, String> vehicleModelColumnView;
     @javafx.fxml.FXML
-    private TableColumn vehicleIdColumnView;
+    private TableColumn<Vehicle, String> vehicleIdColumnView;
     @javafx.fxml.FXML
-    private TableView viewFleetInventoryTableView;
+    private TableView<Vehicle> viewFleetInventoryTableView;
     @javafx.fxml.FXML
-    private TableColumn registrationNumberColumnView;
+    private TableColumn<Vehicle, String> registrationNumberColumnView;
     @javafx.fxml.FXML
-    private TableColumn vehicleCategoryColumnView;
+    private TableColumn<Vehicle, String> vehicleCategoryColumnView;
     @javafx.fxml.FXML
-    private TableColumn yearOfManufactureColumnView;
+    private TableColumn<Vehicle, String> yearOfManufactureColumnView;
     @javafx.fxml.FXML
     private Text totalFleetCountTextField;
     @javafx.fxml.FXML
-    private TableColumn vehicleTypeColumnView;
+    private TableColumn<Vehicle, String> vehicleTypeColumnView;
 
     @javafx.fxml.FXML
     public void initialize() {

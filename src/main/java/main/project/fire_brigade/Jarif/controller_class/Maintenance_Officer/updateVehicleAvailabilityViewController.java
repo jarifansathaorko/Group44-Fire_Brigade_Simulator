@@ -1,16 +1,18 @@
 package main.project.fire_brigade.Jarif.controller_class.Maintenance_Officer;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.ComboBox;
-
-import javax.swing.table.TableColumn;
-import javax.swing.text.TableView;
-import java.awt.*;
-import java.awt.event.ActionEvent;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
+import main.project.fire_brigade.Jarif.model_class.maintenance_officer.VehicleAvailability;
 
 public class updateVehicleAvailabilityViewController
 {
     @javafx.fxml.FXML
-    private TableColumn availabilityStateColumnView;
+    private TableColumn<VehicleAvailability, String> availabilityStateColumnView;
     @javafx.fxml.FXML
     private Label statusValidationMessageLabel;
     @javafx.fxml.FXML
@@ -18,13 +20,13 @@ public class updateVehicleAvailabilityViewController
     @javafx.fxml.FXML
     private TextField vehicleIdTextField;
     @javafx.fxml.FXML
-    private ComboBox availabilityStateComboBox;
+    private ComboBox<String> availabilityStateComboBox;
     @javafx.fxml.FXML
-    private TableColumn vehicleIdColumnView;
+    private TableColumn<VehicleAvailability, String> vehicleIdColumnView;
     @javafx.fxml.FXML
-    private TableView updateVehicleAvailabilityTableView;
+    private TableView<VehicleAvailability> updateVehicleAvailabilityTableView;
     @javafx.fxml.FXML
-    private TableColumn ChangeReasonColumnView;
+    private TableColumn<VehicleAvailability, String> ChangeReasonColumnView;
 
     @javafx.fxml.FXML
     public void initialize() {
