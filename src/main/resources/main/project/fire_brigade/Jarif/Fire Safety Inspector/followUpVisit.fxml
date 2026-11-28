@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="877.0" prefWidth="1259.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Jarif.controller_class.Fire_Safety_Inspector.followUpVisitViewController">
+   <children>
+      <Text layoutX="272.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record Corrective Follow-Up Visit" wrappingWidth="774.13671875">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="452.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recorded Follow-Up Visits Log">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="inspectionAreaTextField" layoutX="884.0" layoutY="111.0" prefHeight="35.0" prefWidth="290.0" promptText="e.g. Floor 2" />
+      <Button layoutX="559.0" layoutY="382.0" mnemonicParsing="false" onAction="#saveFollowUpButtonOnAction" prefHeight="49.0" prefWidth="157.0" text="Save Follow-Up">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Text layoutX="85.0" layoutY="454.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status/validation message:" wrappingWidth="258.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="statusValidationMessageLabel" layoutX="85.0" layoutY="469.0" prefHeight="41.0" prefWidth="1096.0" />
+      <TableView fx:id="recordedFollowUpVisitTableView" layoutX="43.0" layoutY="572.0" prefHeight="282.0" prefWidth="1143.0">
+         <columns>
+            <TableColumn fx:id="buildingNameColumnView" prefWidth="148.0" text="Building Name" />
+            <TableColumn fx:id="inspectionAreaColumnView" prefWidth="163.0" text="Inspection Area" />
+            <TableColumn fx:id="followUpDateColumnView" prefWidth="205.0" text="Follow-Up Date" />
+            <TableColumn fx:id="followUpResultColumnView" minWidth="2.0" prefWidth="193.0" text="Follow-Up Result" />
+            <TableColumn fx:id="followUpNotesColumnView" minWidth="2.0" prefWidth="433.0" text="Follow-Up Notes:" />
+         </columns>
+      </TableView>
+      <Text layoutX="680.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inspection Area:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="buildingNameCheckBox" layoutX="347.0" layoutY="112.0" prefHeight="35.0" prefWidth="290.0" promptText="e.g. City Plaza" />
+      <Text layoutX="153.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow-Up Result:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="followUpNotesTextArea" layoutX="363.0" layoutY="271.0" prefHeight="102.0" prefWidth="740.0" />
+      <Text layoutX="153.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building Name:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="correctedRadioButton" layoutX="372.0" layoutY="232.0" mnemonicParsing="false" text="Corrected">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="notCorrectedRadioButton" layoutX="630.0" layoutY="233.0" mnemonicParsing="false" text="Not Corrected">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="partiallyCorrectedRadioButton" layoutX="474.0" layoutY="233.0" mnemonicParsing="false" text="Partially Corrected">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="153.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow-Up Notes:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="153.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Follow-Up Date:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="followUpDateDatePicker" layoutX="347.0" layoutY="172.0" prefHeight="35.0" prefWidth="290.0" />
+   </children>
+</AnchorPane>

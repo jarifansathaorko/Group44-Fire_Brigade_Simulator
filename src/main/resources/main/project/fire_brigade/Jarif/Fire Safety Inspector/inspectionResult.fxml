@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="877.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.project.fire_brigade.Jarif.controller_class.Fire_Safety_Inspector.inspectionResultViewController">
+   <children>
+      <Text layoutX="365.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Record Inspection Result" wrappingWidth="568.13671875">
+         <font>
+            <Font name="System Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text layoutX="82.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Building Name">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="82.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Result Outcome:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="inspectionRefTextField" layoutX="323.0" layoutY="158.0" prefHeight="35.0" prefWidth="226.0" promptText="e.g. INS-301" />
+      <Button layoutX="992.0" layoutY="322.0" mnemonicParsing="false" onAction="#saveResultButtonOnAction" prefHeight="49.0" prefWidth="157.0" text="Save Result">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Text layoutX="93.0" layoutY="785.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status/validation message:" wrappingWidth="258.13671875">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="statusValidationMessageLabel" layoutX="94.0" layoutY="793.0" prefHeight="41.0" prefWidth="1111.0" />
+      <TableView fx:id="recordInspectionResultTableView" layoutX="54.0" layoutY="437.0" prefHeight="312.0" prefWidth="1150.0">
+         <columns>
+            <TableColumn fx:id="inspectionRefColumnView" prefWidth="200.0" text="Inspection Ref" />
+            <TableColumn fx:id="buildingNameColumnView" prefWidth="216.0" text="Building Name" />
+            <TableColumn fx:id="resultOutcomeColumnView" prefWidth="162.0" text="Result Outcome" />
+            <TableColumn fx:id="DateColumnView" prefWidth="159.0" text="Date" />
+            <TableColumn fx:id="inspectionNotesColumnView" prefWidth="412.0" text="Inspection Notes" />
+         </columns>
+      </TableView>
+      <Text layoutX="323.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inspection Ref">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="567.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <DatePicker fx:id="DateDatePicker" layoutX="567.0" layoutY="158.0" prefHeight="35.0" prefWidth="226.0" />
+      <ComboBox fx:id="buildingNameCheckBox" layoutX="83.0" layoutY="158.0" prefHeight="35.0" prefWidth="226.0" promptText="e.g. City Plaza" />
+      <RadioButton fx:id="passRadioButton" layoutX="280.0" layoutY="233.0" mnemonicParsing="false" text="Pass">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="failRadioButton" layoutX="365.0" layoutY="233.0" mnemonicParsing="false" text="Fail">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="conditionalRadioButton" layoutX="436.0" layoutY="233.0" mnemonicParsing="false" text="Conditional">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Text layoutX="82.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inspection Notes">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="inspectionNotesTextArea" layoutX="83.0" layoutY="301.0" prefHeight="90.0" prefWidth="843.0" />
+   </children>
+</AnchorPane>
